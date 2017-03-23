@@ -33,7 +33,7 @@
 		mounted(){
 			// 事件绑定
 			$("body").on("tap","#div",function(){
-				alert(this.innerHTML);
+				mui.toast(this.innerHTML);
 			});
 		},
 		methods: {
