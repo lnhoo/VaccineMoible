@@ -104,7 +104,6 @@ module.exports = {
           'vue$': 'vue/dist/vue',
           'assets' : path.resolve(__dirname ,"src/assets"),
           'pages' : path.resolve(__dirname ,"src/pages"),
-          'components' : path.resolve(__dirname ,"src/pages/components"),
           'jquery': 'jquery' 
         }
     },
