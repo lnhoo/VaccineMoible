@@ -5,6 +5,8 @@ import jQuery from 'jquery'
 import mui from 'assets/js/mui.min'
 import 'assets/css/mui.min'
 
+import 'assets/css/common'
+
 window.jQuery = window.$ = jQuery;
 window.mui = mui;
 
