@@ -1,32 +1,22 @@
 <template>
 	<div class="page-home">
-
-		<header class="mui-bar mui-bar-nav page-home">
-		 <a class="mui-icon mui-icon-left-reply mui-pull-left">
-		  	<img src="../../assets/images/title1.png" class="title-img" />
-		  </a>
-		  <h1 class="mui-title">辽宁省疾控疫苗溯源系统</h1>
-		 <a class="mui-icon mui-icon-left-reply mui-pull-right">
-		  	<img src="../../assets/images/title2.png" class="title-img" />
-		  </a>
-		</header>
-		
+		<v-header :headerName="headerName"></v-header>
 	    <div id="mui-slider" class="mui-slider" >
 			<div class="mui-slider-group mui-slider-loop">
 				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#"><img src="../../assets/images/banner.jpg"></a>
+					<a href="#"><img class="sliderImg" src="../../assets/images/banner.jpg"></a>
 				</div>
 				<div class="mui-slider-item">
-					<a href="#"><img src="../../assets/images/banner.jpg"></a>
+					<a href="#"><img class="sliderImg" src="../../assets/images/banner.jpg"></a>
 				</div>
 				<div class="mui-slider-item">
-					<a href="#"><img src="../../assets/images/banner.jpg"></a>
+					<a href="#"><img class="sliderImg" src="../../assets/images/banner.jpg"></a>
 				</div>
 				<div class="mui-slider-item">
-					<a href="#"><img src="../../assets/images/banner.jpg"></a>
+					<a href="#"><img class="sliderImg" src="../../assets/images/banner.jpg"></a>
 				</div>
 				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#"><img src="../../assets/images/banner.jpg"></a>
+					<a href="#"><img class="sliderImg" src="../../assets/images/banner.jpg"></a>
 				</div>
 			</div>
 			<div class="mui-slider-indicator">
@@ -35,12 +25,11 @@
 				<div class="mui-indicator"></div>
 			</div>
 		</div>
-
         <div id="divMenu">
         	<ul class="shye_ul">
 		    	<li class="cf">
 		        	<a href="#" class="cf">
-		            	<img src="../../assets/images/j29.png" class="img1"/>
+		            	<img src="../../assets/images/j29.png"  class="img1"/>
 		                <span><b>库房盘点</b><i>Warehouse<br/>inventory</i></span>
 		                <img src="../../assets/images/j22.png" class="img2"/>
 		            </a>
@@ -74,29 +63,24 @@
 		                <img src="../../assets/images/j27.png" class="img2"/>
 		            </a>
 		        </li>
-		        <li class="cf">
-		        	<a href="#" class="cf">
-		            	<img src="../../assets/images/j29.png" class="img1"/>
-		                <span><b>运输监控</b><i>Transportation</i></span>
-		                <img src="../../assets/images/j22.png" class="img2"/>
-		            </a>
-		            <a href="#" class="cf">
-		            	<img src="../../assets/images/j29.png" class="img1"/>
-		                <span><b>冷链监控</b><i>Cold chain<br/> monitoring</i></span>
-		                <img src="../../assets/images/j23.png" class="img2"/>
-		            </a>
-		        </li>
+
 		    </ul>
         </div>
+	
+		
 	</div>
 </template>
 
 <script>
+	import header from 'pages/components/header'
     export default {
     	name: 'page-home',
+    	components :{
+    		"v-header" : header
+    	},
         data() {
 			return {
-				
+				headerName : '首页'
 			}
 		},
 		mounted(){
@@ -113,9 +97,7 @@
     }
 </script>
 <style>
-	    .page-home{background:#303f7a;}
-    	.mui-title{color: white; font-size: 20px; font-weight: bold;}
-    	.title-img{width: 28px;}
+    	.sliderImg{height: 180px; margin-top: 43px;}
     	.shye_ul{ padding:10px;}
 		.shye_ul li{ background:url(../../assets/images/j28.png) no-repeat center; background-size:100% 100%; padding:10px; margin-bottom:15px; padding-top:12px;}
 		.shye_ul li a{ display:block; width:43%; padding:10px 3%; float:left;}
