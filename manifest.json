@@ -10,19 +10,15 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "dist/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
 		"url": "http://www.dcloud.io"
 	},
 	"permissions": {
-		"Accelerometer": {
-            "description": "访问加速度感应器"
-        },
-        "Audio": {
-            "description": "访问麦克风"
-        },
+		
+        
         "Cache": {
             "description": "管理应用缓存"
         },
@@ -32,9 +28,7 @@
         "Console": {
             "description": "跟踪调试输出日志"
         },
-        "Contacts": {
-            "description": "访问系统联系人信息"
-        },
+        
         "Device": {
             "description": "访问设备信息"
         },
@@ -56,9 +50,7 @@
          "Invocation": {
             "description": "使用Native.js能力"
         },
-        "Messaging": {
-            "description": "访问通讯能力"
-        },
+        
         "Orientation": {
             "description": "访问方向感应器"
         },
@@ -84,9 +76,7 @@
         "Barcode": {
             "description": "管理二维码扫描插件"
         },
-        "Maps": {
-            "description": "管理地图插件"
-        },
+        
         "Speech": {
             "description": "管理语音识别插件"
         },
@@ -124,42 +114,42 @@
 				"keystore": "",/*Android应用打包使用的密钥库文件*/
 				"password": "",/*Android应用打包使用密钥库中证书的密码*/
 				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
-				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
 			},
-			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"orientation": ["portrait-primary","portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
 			"icons": {
 				"ios": {
 					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
 					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
 					"iphone": {
-						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
-						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
-						"retina7": "",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
-						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
-						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
-						"spotlight-retina7": "",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
-						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
-						"settings-retina": ""
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png","retina8":"unpackage/res/icons/180x180.png","settings-retina8":"unpackage/res/icons/87x87.png"
 					},
 					"ipad": {
-						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
-						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
-						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
-						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
-						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
-						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
-						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
-						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
-						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
-						"settings-retina": ""
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
 					}
 				},
 				"android": {
-					"mdpi": "", /*普通屏程序图标，分辨率：48x48*/
-					"ldpi": "", /*大屏程序图标，分辨率：48x48*/
-					"hdpi": "", /*高分屏程序图标，分辨率：72x72*/
-					"xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
-					"xxhdpi": ""
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"
 				}
 			},
 			"splashscreen": {
@@ -189,5 +179,155 @@
 				}
 			}
 		}
-	}
+	},
+	"dependencies": {
+		"pages": {
+			"dist/index.html": {
+				"resources": [
+					"/dist/common.js",
+					"/dist/build.js",
+					"dist/build.js",
+					"dist/common.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"/dist/common.js",
+					"/dist/build.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"src/assets/images/3.jpg",
+				"src/app/app.html",
+				"src/pages/user/home.vue",
+				"src/assets/images/title1.png",
+				"src/pages/user/demo.html",
+				"dist/j35.png",
+				"dist/1.js",
+				"src/assets/images/login.jpg",
+				"dist/title1.png",
+				"dist/j22.png",
+				"src/pages/components/tabber.vue",
+				"dist/password.png",
+				"package.json",
+				"src/assets/images/j23.png",
+				"src/pages/user/login.vue",
+				"src/assets/images/j29.png",
+				"dist/userName.png",
+				"src/assets/images/j32.png",
+				"README.md",
+				"dist/j26.png",
+				"src/assets/font/mui.ttf",
+				"src/pages/components/header.vue",
+				"dist/j24.png",
+				"gulpfile.js",
+				"dist/j34.png",
+				"src/assets/images/j34.png",
+				"src/assets/images/login.png",
+				"src/assets/images/1.jpg",
+				"dist/title2.png",
+				"dist/j27.png",
+				"src/assets/images/banner.jpg",
+				"src/assets/css/common.css",
+				"src/main.js",
+				"src/assets/images/j25.png",
+				"config/index.js",
+				"dist/j25.png",
+				"src/config/routers.js",
+				"dist/0.js",
+				"src/assets/images/j24.png",
+				"dist/j29.png",
+				"src/assets/images/j22.png",
+				"src/assets/images/j33.png",
+				"src/assets/images/password.png",
+				"src/assets/images/j26.png",
+				"dist/banner.jpg",
+				"dist/j33.png",
+				"src/assets/images/j27.png",
+				"webpack.config.js",
+				"src/assets/js/mui.min.js",
+				"src/assets/images/2.jpg",
+				"dist/login.png",
+				"src/assets/css/mui.min.css",
+				"src/assets/images/j35.png",
+				"dist/8820b7f6582a3c45b7527ae6b183dd2f.ttf",
+				"src/assets/images/title2.png",
+				"dist/j32.png",
+				"src/assets/images/userName.png",
+				"src/assets/images/j28.png",
+				"dist/j28.png",
+				"dist/j23.png"
+			]
+		}
+	},"fullscreen":true,
+	"unpackage":[
+	  "config/index.js",
+	  "dist/0.js",
+	  "dist/1.js",
+	  "dist/8820b7f6582a3c45b7527ae6b183dd2f.ttf",
+	  "dist/banner.jpg",
+	  "dist/build.js",
+	  "dist/common.js",
+	  "dist/j22.png",
+	  "dist/j23.png",
+	  "dist/j24.png",
+	  "dist/j25.png",
+	  "dist/j26.png",
+	  "dist/j27.png",
+	  "dist/j28.png",
+	  "dist/j29.png",
+	  "dist/j32.png",
+	  "dist/j33.png",
+	  "dist/j34.png",
+	  "dist/j35.png",
+	  "dist/login.png",
+	  "dist/password.png",
+	  "dist/title1.png",
+	  "dist/title2.png",
+	  "dist/userName.png",
+	  "src/app/app.html",
+	  "src/assets/css/common.css",
+	  "src/assets/css/mui.min.css",
+	  "src/assets/font/mui.ttf",
+	  "src/assets/images/1.jpg",
+	  "src/assets/images/2.jpg",
+	  "src/assets/images/3.jpg",
+	  "src/assets/images/banner.jpg",
+	  "src/assets/images/j22.png",
+	  "src/assets/images/j23.png",
+	  "src/assets/images/j24.png",
+	  "src/assets/images/j25.png",
+	  "src/assets/images/j26.png",
+	  "src/assets/images/j27.png",
+	  "src/assets/images/j28.png",
+	  "src/assets/images/j29.png",
+	  "src/assets/images/j32.png",
+	  "src/assets/images/j33.png",
+	  "src/assets/images/j34.png",
+	  "src/assets/images/j35.png",
+	  "src/assets/images/login.jpg",
+	  "src/assets/images/login.png",
+	  "src/assets/images/password.png",
+	  "src/assets/images/title1.png",
+	  "src/assets/images/title2.png",
+	  "src/assets/images/userName.png",
+	  "src/assets/js/mui.min.js",
+	  "src/config/routers.js",
+	  "src/main.js",
+	  "src/pages/components/header.vue",
+	  "src/pages/components/tabber.vue",
+	  "src/pages/user/demo.html",
+	  "src/pages/user/home.vue",
+	  "src/pages/user/login.vue",
+	  "README.md",
+	  "gulpfile.js",
+	  "package.json",
+	  "webpack.config.js"
+	]
 }

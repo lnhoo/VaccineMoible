@@ -99,10 +99,10 @@
     }
 </script>
 <style>
-    	.sliderImg{height: 180px; margin-top: 43px;}
+    	.sliderImg{height: 180px; margin-top: 30px;}
     	.shye_ul{ padding:10px;}
-		.shye_ul li{ background:url(../../assets/images/j28.png) no-repeat center; background-size:100% 100%; padding:10px; margin-bottom:15px; padding-top:12px;}
-		.shye_ul li a{ display:block; width:43%; padding:10px 3%; float:left;}
+		.shye_ul li{ background:url(../../assets/images/j28.png) no-repeat center; background-size:100% 100%; padding:10px; margin-bottom:15px; }
+		.shye_ul li a{ display:block; width:50%; padding:10px 3%; float:left;}
 		.shye_ul li a img.img1{ float:left; height:4px; margin:6px 5px 0 0}
 		.shye_ul li a span{ float:left;}
 		.shye_ul li a span b{ display:block; color:#fff; font-size:15px; line-height:15px;}
