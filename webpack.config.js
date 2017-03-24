@@ -7,6 +7,7 @@ var plugins = []
 
 plugins.push(new webpack.optimize.CommonsChunkPlugin('common'))
 
+
 // 引入jquery
 plugins.push(new webpack.ProvidePlugin({
     jQuery : 'jquery',
@@ -55,7 +56,8 @@ plugins.push(
 
 module.exports = {
     entry: {
-        build:'./src/main.js'
+        build:'./src/main.js',
+        common: ['jquery', 'vue','vue-router']
     },
     output: {
         path: path.resolve(__dirname, './dist'),
