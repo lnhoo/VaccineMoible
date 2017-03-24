@@ -65,22 +65,24 @@
 		        </li>
 
 		    </ul>
-        </div>
-	
-		
+        </div>	
+		<v-tabber :tabberName="tabberName"></v-tabber>
 	</div>
 </template>
 
 <script>
 	import header from 'pages/components/header'
+	import tabber from 'pages/components/tabber'
     export default {
     	name: 'page-home',
     	components :{
-    		"v-header" : header
+    		"v-header" : header,
+    		"v-tabber" : tabber
     	},
         data() {
 			return {
-				headerName : '首页'
+				headerName : '头部导航',
+				tabberName:'选项卡'
 			}
 		},
 		mounted(){
