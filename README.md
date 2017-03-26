@@ -1,5 +1,5 @@
-# VaccineMoible
-辽宁省疾控疫苗手机App
+# WindowsSite
+网站框架模板配置
 
 使用方法
 
@@ -7,6 +7,6 @@
 
 2: npm run dev
 
-3: 游览器输入http://localhost:8080访问
+
 
  
